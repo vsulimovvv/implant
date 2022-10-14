@@ -411,7 +411,7 @@ body.no-scroll {
   top: 60px;
   background-color: var(--color-white);
   width: 100%;
-  z-index: 11;
+  z-index: 9;
   padding: 10px 0;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -1461,6 +1461,10 @@ body.no-scroll {
     bottom: -7px;
   }
 }
+.header.scroll-header.header--no-shadow .header__bottom {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
 .header.scroll-header .header__top {
   display: none;
 }
@@ -2033,7 +2037,7 @@ body.no-scroll {
           transform: translateY(-10px);
   opacity: 0;
   visibility: hidden;
-  z-index: 10;
+  z-index: 111;
   width: 300px;
   position: absolute;
   left: 0;
