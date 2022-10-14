@@ -188,5 +188,6 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
     bindModal('.btn-buy', '.popup--buy', '.popup__close');
+    bindModal('.btn-map', '.popup--map', '.popup__close');
   })();
 });
