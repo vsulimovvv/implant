@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- nice-select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Title</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo-small.png" alt="Логотип" />
+      </a>
+
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg width="19" height="19">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu__body">
+      <div class="mobile-menu__catalog">
+        <button class="mobile-menu__btn mobile-menu__btn--dropdown">
+          Каталог
+        </button>
+
+        <div class="dropmenu">
+          <ul class="dropmenu__list">
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Цветы</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Букеты</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Поводы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">О нас</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Гарантии</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Доставка</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Возврат</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Оплата</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Контакты</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">Отзывы</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__schedule">
+        <span class="mobile-menu__schedule-icon">
+          <svg width="18" height="18">
+            <use xlink:href="images/sprite.svg#clock"></use>
+          </svg>
+        </span>
+        круглосуточно 24/7
+      </div>
+
+      <div class="phone-item">
+        <a href="tel:+79067021115">8 (906) 702-11-15</a>
+        <span class="phone-item__text">для заказов и консультаций</span>
+      </div>
+
+      <button class="mobile-menu__call" type="button">
+        Заказать обратный звонок
+      </button>
+    </div>
+
+    <!-- <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Цветы
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Розы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Пионы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Ромашки</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Гортензии</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Хризантемы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Георгины</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Каллы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Ирисы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Лилии</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Гиацинты</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Анемоны</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Эустома</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Герберы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Сирень</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Букеты
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Букет невесты</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Недорогие цветы</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">VIP букеты</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Необычные</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Крафт</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Бизнес-букеты</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Полевые цветы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Повод
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Татьянин день</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Новоселье</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">1 Сентября</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Букеты ко дню матери</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">День влюбленных</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Выписка из роддома</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">23 Февраля</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">8 Марта</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">9 мая</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Выпускной</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Годовщина</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">День Рождения</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> День Учителя</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Новый Год</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Пасха</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Последний звонок</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Повышение</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Рождение ребенка</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Свадьба</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Свидание</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Юбилей</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Акции</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Новинки</a>
+      </li>
+    </ul> -->
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source srcset="img/logo-small.png" media="(max-width: 991px)" />
+            <img src="img/logo-big.png" alt="" />
+          </picture>
+        </a>
+
+        <select class="header__select select">
+          <option>Самара</option>
+          <option value="1">Киров</option>
+          <option value="2">Москва</option>
+        </select>
+
+        <form class="header__search form-search">
+          <div class="form-search__group">
+            <input
+              class="form-search__input"
+              placeholder="Введите для поиска"
+              required
+            />
+
+            <select class="form-search__select select">
+              <option value="">Все клиники</option>
+              <option value="1">Все клиники</option>
+              <option value="3">Все клиники</option>
+              <option value="2">Все клиники</option>
+              <option value="4">Все клиники</option>
+            </select>
+
+            <button class="form-search__btn" type="button" aria-label="Искать">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <button class="header__btn btn" type="button">Подобрать клинику</button>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--dropdown menu__link--all"
+                href="#"
+              >
+                Все клиники
+              </a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Белые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Красные</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Кремовые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Малиновые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Разноцветные</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Розовые</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Акции </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">
+                О проекте
+              </a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Белые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Красные</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Кремовые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Малиновые</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Разноцветные</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Розовые</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Блог </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Новости </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Все о безопасной имплантации </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="header__mail" href="mailto:info@dental.ru">info@dental.ru</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="about">
+  <div class="section-top">
+    <div class="container">
+      <div class="section-top__inner">
+        <h1 class="section-top__title">Все о безопасной имплантации</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="faqs__wrapper section-wrapper">
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          Кому не следует устанавливать импланты?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Конечно, исключая очевидные противопоказания (инфекционные
+              болезни, ЦНС, гипертонус жевательных мышц и др), для меня важен
+              именно уход пациента за имплантами. Об это подробно уже написано,
+              но иногда я оцениваю плохую гигиену как неуважение к моей работе.
+              Поэтому очень надеюсь, что пациенты будут относится к этому
+              серьезнее.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          Насколько велик риск отторжения зубных имплантатов?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Конечно, исключая очевидные противопоказания (инфекционные
+              болезни, ЦНС, гипертонус жевательных мышц и др), для меня важен
+              именно уход пациента за имплантами. Об это подробно уже написано,
+              но иногда я оцениваю плохую гигиену как неуважение к моей работе.
+              Поэтому очень надеюсь, что пациенты будут относится к этому
+              серьезнее.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          Кому подходит имплантация?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Конечно, исключая очевидные противопоказания (инфекционные
+              болезни, ЦНС, гипертонус жевательных мышц и др), для меня важен
+              именно уход пациента за имплантами. Об это подробно уже написано,
+              но иногда я оцениваю плохую гигиену как неуважение к моей работе.
+              Поэтому очень надеюсь, что пациенты будут относится к этому
+              серьезнее.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          Как происходит процесс имплантации?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Конечно, исключая очевидные противопоказания (инфекционные
+              болезни, ЦНС, гипертонус жевательных мышц и др), для меня важен
+              именно уход пациента за имплантами. Об это подробно уже написано,
+              но иногда я оцениваю плохую гигиену как неуважение к моей работе.
+              Поэтому очень надеюсь, что пациенты будут относится к этому
+              серьезнее.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          А как скоро нужно менять временный протез?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Конечно, исключая очевидные противопоказания (инфекционные
+              болезни, ЦНС, гипертонус жевательных мышц и др), для меня важен
+              именно уход пациента за имплантами. Об это подробно уже написано,
+              но иногда я оцениваю плохую гигиену как неуважение к моей работе.
+              Поэтому очень надеюсь, что пациенты будут относится к этому
+              серьезнее.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          Почему нельзя сразу поставить керамический протез?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Конечно, исключая очевидные противопоказания (инфекционные
+              болезни, ЦНС, гипертонус жевательных мышц и др), для меня важен
+              именно уход пациента за имплантами. Об это подробно уже написано,
+              но иногда я оцениваю плохую гигиену как неуважение к моей работе.
+              Поэтому очень надеюсь, что пациенты будут относится к этому
+              серьезнее.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqs-accordion accordion">
+        <button class="faqs-accordion__control accordion-control">
+          Почему нельзя сразу поставить керамический протез?
+        </button>
+        <div class="faqs-accordion__content accordion-content">
+          <div class="faqs-accordion__text">
+            <p>
+              Какие все-таки импланты лучше ставить?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="certificate">
+  <div class="container">
+    <div class="certificate__wrapper">
+      <div class="certificate__offer">
+        <h2 class="certificate__title">
+          Сертификат <br />
+          «Безопасная имплантация с двойной гарантией»
+        </h2>
+        <ul class="certificate__list">
+          <li class="certificate__item certificate__item--economy">
+            <b>экономия</b> на оплате до 5000 руб.
+          </li>
+          <li class="certificate__item certificate__item--compensation">
+            <b>право на компенсацию</b> в 10 000 руб. в случае отторжения
+            импланта
+          </li>
+        </ul>
+      </div>
+
+      <div class="certificate__right">
+        <div
+          class="certificate__img"
+          style="background-image: url('img/certificate-img.png')"
+        ></div>
+        
+        <button class="certificate__btn btn" type="button">
+          Купить сертификат за 500 руб.
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__logo logo" href="index.html">
+        <img src="img/logo-small.png" alt="Логотип" />
+      </a>
+
+      <nav class="footer__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Все клиники </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Акции </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> О проекте </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Блог </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Новости </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Все о безопасной имплантации </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="footer__btn btn" type="button">Подобрать клинику</button>
+    </div>
+
+    <div class="footer__bottom">
+      <p>
+        Данный сайт носит информационный характер и не является публичной
+        офертой.
+      </p>
+      <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+        <span>Разработка сайта</span>
+        <img src="img/logo-company.png" alt="АдвансМедиа" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- nice-select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
