@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- nice-select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Безопасная имплантация</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--buy">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Купить сертификат</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Купить сертификат
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo-small.png" alt="Логотип" />
+      </a>
+
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg width="19" height="19">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu__body">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <div class="mobile-menu-accordion accordion">
+            <div class="accordion-top">
+              <button class="mobile-menu__link accordion-control" type="button">
+                Все клиники
+              </button>
+            </div>
+
+            <div class="mobile-menu-accordion__content accordion-content">
+              <ul class="mobile-menu-accordion__list">
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#"> Все клиники</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#"> Все клиники</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#"> Все клиники</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="stock.html">Акции</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <div class="mobile-menu-accordion accordion">
+            <div class="accordion-top">
+              <button class="mobile-menu__link accordion-control" type="button">
+                О проекте
+              </button>
+            </div>
+
+            <div class="mobile-menu-accordion__content accordion-content">
+              <ul class="mobile-menu-accordion__list">
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#">О проекте</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#">О проекте</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#">О проекте</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="blog.html">Блог</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="news.html">Новости</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="faqs.html"
+            >Все о безопасной имплантации</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source srcset="img/logo-small.png" media="(max-width: 991px)" />
+            <img src="img/logo-big.png" alt="" />
+          </picture>
+        </a>
+
+        <select class="header__select select">
+          <option>Самара</option>
+          <option value="1">Киров</option>
+          <option value="2">Москва</option>
+        </select>
+
+        <form class="header__search form-search">
+          <div class="form-search__group">
+            <input
+              class="form-search__input"
+              placeholder="Введите для поиска"
+              required
+            />
+
+            <select class="form-search__select select">
+              <option value="">Все клиники</option>
+              <option value="1">Все клиники</option>
+              <option value="3">Все клиники</option>
+              <option value="2">Все клиники</option>
+              <option value="4">Все клиники</option>
+            </select>
+
+            <button class="form-search__btn" type="button" aria-label="Искать">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <button class="header__btn btn" type="button">Подобрать клинику</button>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <a class="header__logo logo" href="index.html">
+          <img src="img/logo-small.png" alt="" />
+        </a>
+
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--dropdown menu__link--all"
+                href="#"
+              >
+                Все клиники
+              </a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Все клиники</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Все клиники</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Все клиники</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="stock.html">Акции </a>
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--dropdown"
+                href="about.html"
+                target="_blank"
+              >
+                О проекте
+              </a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">О проекте</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">О проекте</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">О проекте</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">О проекте</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html"> Блог </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="news.html"> Новости </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="faqs.html">
+                Все о безопасной имплантации
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="header__mail" href="mailto:info@dental.ru">info@dental.ru</a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="product">
+  <div class="section-top">
+    <div class="container">
+      <div class="section-top__inner">
+        <h1 class="section-top__title">
+          Альфа-Центр Здоровья в Самаре, <br />
+          медицинский центр
+        </h1>
+      </div>
+    </div>
+    <div class="section-top__menu">
+      <div class="container">
+        <ul class="section-top__list">
+          <li class="section-top__item">
+            <a class="section-top__link" href="#peculiarities">Особенности</a>
+          </li>
+          <li class="section-top__item">
+            <a class="section-top__link" href="#prices">Эталонные цены </a>
+          </li>
+          <li class="section-top__item">
+            <a class="section-top__link" href="#equipment">Оснащение</a>
+          </li>
+          <li class="section-top__item">
+            <a class="section-top__link" href="#doctors">Врачи</a>
+          </li>
+          <li class="section-top__item">
+            <a class="section-top__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="section-top__item">
+            <a class="section-top__link" href="#licenses">Лицензии</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="product__wrapper">
+      <div class="product__slider">
+        <div class="slider-thumbs">
+          <div class="slider-thumbs__nav">
+            <div class="slider-thumbs__nav-wrap swiper" id="slider-nav">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide slider-nav__slide">
+                  <img src="img/product-slider/1.jpg" alt="Слайд №1" />
+                </li>
+                <li class="swiper-slide slider-nav__slide">
+                  <img src="img/product-slider/2.jpg" alt="Слайд №1" />
+                </li>
+                <li class="swiper-slide slider-nav__slide">
+                  <img src="img/product-slider/3.jpg" alt="Слайд №1" />
+                </li>
+                <li class="swiper-slide slider-nav__slide">
+                  <img src="img/product-slider/4.jpg" alt="Слайд №1" />
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="slider-thumbs__nav-control">
+                <button
+                  class="swiper-button-prev"
+                  type="button"
+                  aria-label="Предыдущий"
+                ></button>
+                <button
+                  class="swiper-button-next"
+                  type="button"
+                  aria-label="Следующий"
+                ></button>
+              </div> -->
+          </div>
+
+          <div class="slider-thumbs__main swiper" id="slider-main">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a
+                  class="slider-thumbs__img"
+                  data-fancybox="gallery"
+                  href="img/product/1.jpg"
+                >
+                  <img src="img/product-slider/1.jpg" alt="Слайд №1" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a
+                  class="slider-thumbs__img"
+                  data-fancybox="gallery"
+                  href="img/product-slider/2.jpg"
+                >
+                  <img src="img/product-slider/2.jpg" alt="Слайд №1" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a
+                  class="slider-thumbs__img"
+                  data-fancybox="gallery"
+                  href="img/product-slider/3.jpg"
+                >
+                  <img src="img/product-slider/3.jpg" alt="Слайд №1" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a
+                  class="slider-thumbs__img"
+                  data-fancybox="gallery"
+                  href="img/product-slider/3.jpg"
+                >
+                  <img src="img/product-slider/4.jpg" alt="Слайд №1" />
+                </a>
+              </li>
+            </ul>
+
+            <!-- <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Следующий"
+              ></button> -->
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <address class="product-info__address">
+          Самара, ул Ново-Садовая, д 311
+        </address>
+
+        <div class="product-info__links">
+          <a class="product-info__link clinic-info__link--address">
+            Куйбышевский район
+          </a>
+          <a
+            class="product-info__link clinic-info__link--phone"
+            href="tel:+78462010870"
+          >
+            +7 (846) 201-08-70
+          </a>
+        </div>
+
+        <div class="product-info__map map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A27f1dbe036244e7c46eccd6a89911e63f60f864bcf50167f4d0e064a94918c9c&amp;source=constructor"
+            width="400"
+            height="400"
+          ></iframe>
+
+          <button class="map__btn">Открыть карту на весь экран</button>
+        </div>
+
+        <div class="product-info__schedule">
+          <span>Сегодня</span>
+          <p>
+            пн-пт с 08:00 до 21:00; сб с 09:00 до 17:00; вс с 09:00 до 18:00
+          </p>
+        </div>
+
+        <button class="product-info__btn btn" type="button">
+          Записаться на прием
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="product-peculiarities" id="peculiarities">
+  <div class="container">
+    <h2 class="product-peculiarities__title product-title">Особенности</h2>
+
+    <div class="product-peculiarities__text">
+      <p>
+        Многопрофильный медицинский центр Альфа-Центр Здоровья в Самаре
+        принадлежит одной из самых крупных сетей федеральных клиник по всей
+        России с одноименным названием, которая уже более 10 лет оказывает
+        качественные медицинские услуги взрослым и детям.
+      </p>
+      <p>
+        Альфа-Центр Здоровья оснащен современным медицинским оборудованием, что
+        позволяет с высокой точностью осуществлять диагностику заболеваний в
+        любых, даже самых сложных случаях. Медицинский центр оказывает полный
+        спектр амбулаторно-поликлинических и диагностических услуг.
+      </p>
+    </div>
+
+    <div class="conventions">
+      <ul class="conventions__list">
+        <li class="conventions__item conventions__item--payment">
+          Оплата сертификатом «Безопасная имплантация»
+        </li>
+        <li class="conventions__item conventions__item--gift">
+          Розыгрыш призов
+        </li>
+        <li class="conventions__item conventions__item--credit">
+          Беспроцентная рассрочка или кредит
+        </li>
+        <li class="conventions__item conventions__item--discount">
+          Скидки в «горящее время»
+        </li>
+        <li class="conventions__item conventions__item--bonus">
+          Частичная оплата бонусами
+        </li>
+        <li class="conventions__item conventions__item--guarantee">
+          Расширенная гарантия от клиники
+        </li>
+        <li class="conventions__item conventions__item--finance">
+          Финансовая гарантия владельца сайта
+        </li>
+        <li class="conventions__item conventions__item--anesthesia">
+          Имплантация под наркозом
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="product-prices" id="prices">
+  <div class="container">
+    <h2 class="product-prices__title product-title">Эталонные цены</h2>
+
+    <ul class="product-prices__list">
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">Удаление зуба</div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">Капельницы</div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">УЗИ сердца / ЭхоКГ</div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">УЗИ малого таза</div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">ЭЭГ</div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">УЗИ молочных желез</div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+      <li class="product-prices-item">
+        <div class="product-prices-item__left">
+          Радиоволновое удаление папиллом (1 элемент)
+        </div>
+        <div class="product-prices-item__price">от 100 000 ₽</div>
+        <button class="product-prices-item__btn btn">
+          Записаться на прием
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="product-equipment" id="equipment">
+  <div class="container">
+    <h2 class="product-equipment__title product-title">Оснащение</h2>
+
+    <ul class="product-equipment__list">
+      <li class="product-equipment__item">• Компьютерный томограф</li>
+      <li class="product-equipment__item">• Компрессоры и аспираторы</li>
+      <li class="product-equipment__item">• CAD/CAM системы</li>
+      <li class="product-equipment__item">• Стоматологический микроскоп</li>
+      <li class="product-equipment__item">• Наконечники и микромоторы</li>
+      <li class="product-equipment__item">• Мебель для стоматологии</li>
+      <li class="product-equipment__item">• 3D принтер</li>
+      <li class="product-equipment__item">• Зуботехническое оборудование</li>
+      <li class="product-equipment__item">• Стерилизационное оборудование</li>
+    </ul>
+  </div>
+</section>
+
+        <section class="product-doctors" id="doctors">
+  <div class="container">
+    <h2 class="product-doctors__title product-title">Врачи клиники</h2>
+
+    <ul class="product-doctors__list">
+      <li class="product-doctors__item">
+        <article class="doctors-card">
+          <div class="doctors-card__top">
+            <img src="img/doctor.jpg" alt="doctor" />
+          </div>
+          <div class="doctors-card__body">
+            <h3 class="doctors-card__title">
+              <a href="#"> Кузин Максим Эдуардович </a>
+            </h3>
+            <span class="doctors-card__experience">Стаж 2 года</span>
+
+            <div class="doctors-card__badges badges">
+              <a class="badges__link" href="#">педиатр</a>
+              <a class="badges__link" href="#">детский</a>
+            </div>
+
+            <button class="doctors-card__appointment" type="button">
+              Запись на приём
+            </button>
+
+            <div class="doctors-card__schedule">Сегодня с 08:00 до 12:00</div>
+          </div>
+        </article>
+      </li>
+      <li class="product-doctors__item">
+        <article class="doctors-card">
+          <div class="doctors-card__top">
+            <img src="img/doctor.jpg" alt="doctor" />
+          </div>
+          <div class="doctors-card__body">
+            <h3 class="doctors-card__title">
+              <a href="#"> Кузин Максим Эдуардович </a>
+            </h3>
+            <span class="doctors-card__experience">Стаж 2 года</span>
+
+            <div class="doctors-card__badges badges">
+              <a class="badges__link" href="#">педиатр</a>
+              <a class="badges__link" href="#">детский</a>
+            </div>
+
+            <button class="doctors-card__appointment" type="button">
+              Запись на приём
+            </button>
+
+            <div class="doctors-card__schedule">Сегодня с 08:00 до 12:00</div>
+          </div>
+        </article>
+      </li>
+      <li class="product-doctors__item">
+        <article class="doctors-card">
+          <div class="doctors-card__top">
+            <img src="img/doctor.jpg" alt="doctor" />
+          </div>
+          <div class="doctors-card__body">
+            <h3 class="doctors-card__title">
+              <a href="#"> Кузин Максим Эдуардович </a>
+            </h3>
+            <span class="doctors-card__experience">Стаж 2 года</span>
+
+            <div class="doctors-card__badges badges">
+              <a class="badges__link" href="#">педиатр</a>
+              <a class="badges__link" href="#">детский</a>
+            </div>
+
+            <button class="doctors-card__appointment" type="button">
+              Запись на приём
+            </button>
+
+            <div class="doctors-card__schedule">Сегодня с 08:00 до 12:00</div>
+          </div>
+        </article>
+      </li>
+      <li class="product-doctors__item">
+        <article class="doctors-card">
+          <div class="doctors-card__top">
+            <img src="img/doctor.jpg" alt="doctor" />
+          </div>
+          <div class="doctors-card__body">
+            <h3 class="doctors-card__title">
+              <a href="#"> Кузин Максим Эдуардович </a>
+            </h3>
+            <span class="doctors-card__experience">Стаж 2 года</span>
+
+            <div class="doctors-card__badges badges">
+              <a class="badges__link" href="#">педиатр</a>
+              <a class="badges__link" href="#">детский</a>
+            </div>
+
+            <button class="doctors-card__appointment" type="button">
+              Запись на приём
+            </button>
+
+            <div class="doctors-card__schedule">Сегодня с 08:00 до 12:00</div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="product-reviews" id="reviews">
+  <div class="container">
+    <h2 class="product-reviews__title product-title">Отзывы</h2>
+
+    <ul class="product-reviews__list">
+      <li class="product-reviews__item">
+        <div class="reviews-card">
+          <div class="reviews-card__top">
+            <div class="reviews-card__person">
+              <img
+                class="reviews-card__img"
+                src="img/reviews-default.jpg"
+                alt="reviews"
+              />
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Ирина Иванова</span>
+                <div class="reviews-card__date">
+                  <span>29.09.2022 </span>
+                  <span>15:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-card__rating rating">
+              <ul class="rating__stars">
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star rating__star--disabled"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reviews-card__text">
+            <p>
+              Дважды была у данного гинеколога. Ужасное общение, спросила
+              действительно ли у меня кровь в моче (пришла не по ДМС с циститом
+              направили к ней). И так страшно, мало ли что, ещё и такие вопросы
+              странные, как будто я просто так пришла. Сказала пить монурал, не
+              важно в какое время (другие врачи назначали его пить перед сном).
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="product-reviews__item">
+        <div class="reviews-card">
+          <div class="reviews-card__top">
+            <div class="reviews-card__person">
+              <img
+                class="reviews-card__img"
+                src="img/reviews-default.jpg"
+                alt="reviews"
+              />
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Ирина Иванова</span>
+                <div class="reviews-card__date">
+                  <span>29.09.2022 </span>
+                  <span>15:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-card__rating rating">
+              <ul class="rating__stars">
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star rating__star--disabled"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reviews-card__text">
+            <p>
+              Дважды была у данного гинеколога. Ужасное общение, спросила
+              действительно ли у меня кровь в моче (пришла не по ДМС с циститом
+              направили к ней). И так страшно, мало ли что, ещё и такие вопросы
+              странные, как будто я просто так пришла. Сказала пить монурал, не
+              важно в какое время (другие врачи назначали его пить перед сном).
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="product-reviews__item">
+        <div class="reviews-card">
+          <div class="reviews-card__top">
+            <div class="reviews-card__person">
+              <img
+                class="reviews-card__img"
+                src="img/reviews-default.jpg"
+                alt="reviews"
+              />
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Ирина Иванова</span>
+                <div class="reviews-card__date">
+                  <span>29.09.2022 </span>
+                  <span>15:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-card__rating rating">
+              <ul class="rating__stars">
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star rating__star--disabled"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reviews-card__text">
+            <p>
+              Дважды была у данного гинеколога. Ужасное общение, спросила
+              действительно ли у меня кровь в моче (пришла не по ДМС с циститом
+              направили к ней). И так страшно, мало ли что, ещё и такие вопросы
+              странные, как будто я просто так пришла. Сказала пить монурал, не
+              важно в какое время (другие врачи назначали его пить перед сном).
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="product-reviews__item">
+        <div class="reviews-card">
+          <div class="reviews-card__top">
+            <div class="reviews-card__person">
+              <img
+                class="reviews-card__img"
+                src="img/reviews-default.jpg"
+                alt="reviews"
+              />
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Ирина Иванова</span>
+                <div class="reviews-card__date">
+                  <span>29.09.2022 </span>
+                  <span>15:00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-card__rating rating">
+              <ul class="rating__stars">
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star"></li>
+                <li class="rating__star rating__star--disabled"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reviews-card__text">
+            <p>
+              Дважды была у данного гинеколога. Ужасное общение, спросила
+              действительно ли у меня кровь в моче (пришла не по ДМС с циститом
+              направили к ней). И так страшно, мало ли что, ещё и такие вопросы
+              странные, как будто я просто так пришла. Сказала пить монурал, не
+              важно в какое время (другие врачи назначали его пить перед сном).
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="product-licenses" id="licenses">
+  <div class="container">
+    <h2 class="product-licenses__title product-title">Лицензии</h2>
+
+    <ul class="product-licenses__list">
+      <li
+        class="product-licenses__item"
+        data-fancybox
+        data-src="img/licenses.jpg"
+      >
+        <img
+          src="img/licenses.jpg"
+          data-fancybox
+          data-src="img/licenses.jpg"
+          alt="licenses"
+        />
+      </li>
+      <li class="product-licenses__item">
+        <img
+          src="img/licenses.jpg"
+          data-fancybox
+          data-src="img/licenses.jpg"
+          alt="licenses"
+        />
+      </li>
+      <li class="product-licenses__item">
+        <img
+          src="img/licenses.jpg"
+          data-fancybox
+          data-src="img/licenses.jpg"
+          alt="licenses"
+        />
+      </li>
+      <li class="product-licenses__item">
+        <img
+          src="img/licenses.jpg"
+          data-fancybox
+          data-src="img/licenses.jpg"
+          alt="licenses"
+        />
+      </li>
+      <li class="product-licenses__item">
+        <img
+          src="img/licenses.jpg"
+          data-fancybox
+          data-src="img/licenses.jpg"
+          alt="licenses"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="certificate">
+  <div class="container">
+    <div class="certificate__wrapper">
+      <div class="certificate__offer">
+        <h2 class="certificate__title">
+          Сертификат <br />
+          «Безопасная имплантация с двойной гарантией»
+        </h2>
+        <ul class="certificate__list">
+          <li class="certificate__item certificate__item--economy">
+            <b>экономия</b> на оплате до 5000 руб.
+          </li>
+          <li class="certificate__item certificate__item--compensation">
+            <b>право на компенсацию</b> в 10 000 руб. в случае отторжения
+            импланта
+          </li>
+        </ul>
+      </div>
+
+      <div class="certificate__right">
+        <div
+          class="certificate__img"
+          style="background-image: url('img/certificate-img.png')"
+        ></div>
+
+        <button class="certificate__btn btn btn-buy" type="button">
+          Купить сертификат за 500 руб.
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__logo logo" href="index.html">
+        <img src="img/logo-small.png" alt="Логотип" />
+      </a>
+
+      <nav class="footer__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Все клиники </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Акции </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> О проекте </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Блог </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Новости </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"> Все о безопасной имплантации </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="footer__btn btn" type="button">Подобрать клинику</button>
+    </div>
+
+    <div class="footer__bottom">
+      <p>
+        Данный сайт носит информационный характер и не является публичной
+        офертой.
+      </p>
+      <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+        <span>Разработка сайта</span>
+        <img src="img/logo-company.png" alt="АдвансМедиа" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- nice-select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

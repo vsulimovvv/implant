@@ -37,12 +37,12 @@
 <!-- Custom Link -->
 <link rel="stylesheet" href="css/style.css" />
 
-<title>Title</title>
+<title>Безопасная имплантация</title>
 
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--buy">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -50,7 +50,7 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Купить сертификат</h2>
       <div class="popup__text">
         <p>Оставьте ваши данные и мы вам перезвоним.</p>
       </div>
@@ -84,15 +84,13 @@
         </div>
 
         <button class="form-submit__btn btn" type="button">
-          Заказать звонок
+          Купить сертификат
         </button>
       </form>
     </div>
   </div>
 </div>
 
-
-    <h1 class="visually-hidden">Главная</h1>
 
     <div class="site-wrapper">
       <header class="header">
@@ -118,250 +116,71 @@
     </div>
 
     <div class="mobile-menu__body">
-      <div class="mobile-menu__catalog">
-        <button class="mobile-menu__btn mobile-menu__btn--dropdown">
-          Каталог
-        </button>
-
-        <div class="dropmenu">
-          <ul class="dropmenu__list">
-            <li class="dropmenu__item">
-              <a class="dropmenu__link" href="#">Цветы</a>
-            </li>
-            <li class="dropmenu__item">
-              <a class="dropmenu__link" href="#">Букеты</a>
-            </li>
-            <li class="dropmenu__item">
-              <a class="dropmenu__link" href="#">Поводы</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">О нас</a>
+          <div class="mobile-menu-accordion accordion">
+            <div class="accordion-top">
+              <button class="mobile-menu__link accordion-control" type="button">
+                Все клиники
+              </button>
+            </div>
+
+            <div class="mobile-menu-accordion__content accordion-content">
+              <ul class="mobile-menu-accordion__list">
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#"> Все клиники</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#"> Все клиники</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#"> Все клиники</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="stock.html">Акции</a>
+        </li>
+
+        <li class="mobile-menu__item">
+          <div class="mobile-menu-accordion accordion">
+            <div class="accordion-top">
+              <button class="mobile-menu__link accordion-control" type="button">
+                О проекте
+              </button>
+            </div>
+
+            <div class="mobile-menu-accordion__content accordion-content">
+              <ul class="mobile-menu-accordion__list">
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#">О проекте</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#">О проекте</a>
+                </li>
+                <li class="mobile-menu-accordion__item">
+                  <a class="mobile-menu__link" href="#">О проекте</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Гарантии</a>
+          <a class="mobile-menu__link" href="blog.html">Блог</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Доставка</a>
+          <a class="mobile-menu__link" href="news.html">Новости</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Возврат</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Оплата</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Контакты</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">Отзывы</a>
+          <a class="mobile-menu__link" href="faqs.html"
+            >Все о безопасной имплантации</a
+          >
         </li>
       </ul>
-
-      <div class="mobile-menu__schedule">
-        <span class="mobile-menu__schedule-icon">
-          <svg width="18" height="18">
-            <use xlink:href="images/sprite.svg#clock"></use>
-          </svg>
-        </span>
-        круглосуточно 24/7
-      </div>
-
-      <div class="phone-item">
-        <a href="tel:+79067021115">8 (906) 702-11-15</a>
-        <span class="phone-item__text">для заказов и консультаций</span>
-      </div>
-
-      <button class="mobile-menu__call" type="button">
-        Заказать обратный звонок
-      </button>
     </div>
-
-    <!-- <ul class="mobile-menu__body">
-      <li class="mobile-menu__item">
-        <div class="mobile-menu-box accordion">
-          <button
-            class="mobile-menu-box__name accordion__control"
-            type="button"
-          >
-            Цветы
-          </button>
-
-          <div class="mobile-menu-box__content accordion__content">
-            <ul class="mobile-menu-box__list">
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Розы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Пионы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Ромашки</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Гортензии</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Хризантемы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Георгины</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Каллы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Ирисы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Лилии</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Гиацинты</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Анемоны</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Эустома</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Герберы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Сирень</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="mobile-menu__item">
-        <div class="mobile-menu-box accordion">
-          <button
-            class="mobile-menu-box__name accordion__control"
-            type="button"
-          >
-            Букеты
-          </button>
-
-          <div class="mobile-menu-box__content accordion__content">
-            <ul class="mobile-menu-box__list">
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Букет невесты</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Недорогие цветы</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">VIP букеты</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Необычные</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Крафт</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Бизнес-букеты</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Полевые цветы</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="mobile-menu__item">
-        <div class="mobile-menu-box accordion">
-          <button
-            class="mobile-menu-box__name accordion__control"
-            type="button"
-          >
-            Повод
-          </button>
-
-          <div class="mobile-menu-box__content accordion__content">
-            <ul class="mobile-menu-box__list">
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Татьянин день</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Новоселье</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">1 Сентября</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#"
-                  >Букеты ко дню матери</a
-                >
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">День влюбленных</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Выписка из роддома</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">23 Февраля</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">8 Марта</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">9 мая</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Выпускной</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Годовщина</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">День Рождения</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#"> День Учителя</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Новый Год</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Пасха</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Последний звонок</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Повышение</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Рождение ребенка</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Свадьба</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Свидание</a>
-              </li>
-              <li class="mobile-menu-box__item">
-                <a class="mobile-menu-box__link" href="#">Юбилей</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Акции</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Новинки</a>
-      </li>
-    </ul> -->
   </div>
 
   <!-- Mobile Menu -->
@@ -418,6 +237,10 @@
   <div class="header__bottom">
     <div class="container">
       <div class="header__bottom-inner">
+        <a class="header__logo logo" href="index.html">
+          <img src="img/logo-small.png" alt="" />
+        </a>
+
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -431,70 +254,65 @@
               <div class="dropmenu">
                 <ul class="dropmenu__list">
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Белые</a>
+                    <a class="dropmenu__link" href="#">Все клиники</a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Красные</a>
+                    <a class="dropmenu__link" href="#">Все клиники</a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Кремовые</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Малиновые</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Разноцветные</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Розовые</a>
+                    <a class="dropmenu__link" href="#">Все клиники</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Акции </a>
+              <a class="menu__link" href="stock.html">Акции </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--dropdown" href="#">
+              <a
+                class="menu__link menu__link--dropdown"
+                href="about.html"
+                target="_blank"
+              >
                 О проекте
               </a>
 
               <div class="dropmenu">
                 <ul class="dropmenu__list">
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Белые</a>
+                    <a class="dropmenu__link" href="#">О проекте</a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Красные</a>
+                    <a class="dropmenu__link" href="#">О проекте</a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Кремовые</a>
+                    <a class="dropmenu__link" href="#">О проекте</a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Малиновые</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Разноцветные</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Розовые</a>
+                    <a class="dropmenu__link" href="#">О проекте</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#"> Блог </a>
+              <a class="menu__link" href="blog.html"> Блог </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#"> Новости </a>
+              <a class="menu__link" href="news.html"> Новости </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#"> Все о безопасной имплантации </a>
+              <a class="menu__link" href="faqs.html">
+                Все о безопасной имплантации
+              </a>
             </li>
           </ul>
         </nav>
 
         <a class="header__mail" href="mailto:info@dental.ru">info@dental.ru</a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
       </div>
     </div>
   </div>
