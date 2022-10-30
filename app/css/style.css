@@ -3575,14 +3575,16 @@ body.no-scroll {
     gap: 30px 40px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .form-filters__inner {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    -ms-grid-columns: (auto)[3];
+    grid-template-columns: repeat(3, auto);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
   .form-filters__inner {
     gap: 20px;
     -ms-grid-columns: 1fr;
@@ -3601,18 +3603,59 @@ body.no-scroll {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 290px;
+}
+@media (max-width: 991.98px) {
+  .form-filters__group {
+    width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-filters__group {
+    width: 100%;
+  }
 }
 .form-filters__group--big {
   -ms-grid-column-span: 2;
   grid-column: span 2;
+  width: 645px;
+}
+@media (max-width: 991.98px) {
+  .form-filters__group--big {
+    width: 480px;
+  }
 }
 @media (max-width: 767.98px) {
   .form-filters__group--big {
     grid-column: initial;
+    width: 100%;
+    max-width: 100%;
   }
 }
 .form-filters .nice-select {
   border: 2px solid #e0e4e6;
+  width: 100%;
+}
+.form-filters .current {
+  display: block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+@media (max-width: 576px) {
+  .form-filters .current {
+    max-width: 280px;
+  }
+}
+@media (max-width: 359.98px) {
+  .form-filters .current {
+    max-width: 250px;
+  }
+}
+.form-filters .option {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 .form-filters__label {
   margin-bottom: 15px;
